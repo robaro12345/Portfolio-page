@@ -1,0 +1,66 @@
+.gradient-background {
+    background: linear-gradient(300deg, #1B262C, #0F4C75, #3282B8, #BBE1FA);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+.Resume{
+    text-align: center;
+}
+.Skill{
+    display: grid;
+    border: 9px black solid;
+    border-radius:10px;
+    background-color: black;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 9px;
+}
+.first{
+    padding: 5px;
+    background-color: white;
+    grid-column: span 2;
+}
+.fourth{
+    padding: 5px;
+    background-color: white;
+    grid-column: span 2;
+}
+.second{
+    padding: 5px;
+    grid-row: span 2;
+    background-color: white;
+}
+.third{
+    padding: 5px;
+    grid-row: span 2;
+    background-color: white;
+}
+.Project{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    gap: 9px;
+}
+@media (max-width: 1032px){
+    .Project{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
